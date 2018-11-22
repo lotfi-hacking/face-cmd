@@ -1,5 +1,6 @@
 import requests,json,hashlib
 import os
+global token
 W="\033[0m"
 R="\033[91m"
 G="\033[92m"
