@@ -19,8 +19,8 @@ def main():
 	print "     												"
 #################
 def id():
-	id=raw_input(W+"enter username: "+R)
-	pwd=raw_input(W+"enter password: "+R)
+	id=raw_input(W+"Email or Phone: "+R)
+	pwd=raw_input(W+"Password: "+R)
 	API_SECRET = '62f8ce9f74b12f84c123cc23437a4a32'
 	sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.0'+API_SECRET
 	data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
