@@ -226,14 +226,14 @@ def id_information(id):
 def post(post_id,msg):
 	global token
 	url="https://graph.facebook.com/"+post_id+"/feed"
-	data= {"access_token":token,"message":msg,"privacy":{"value":"SELF"}}
+	data= {"access_token":token,"message":msg}
 	r=requests.post(url,json=data)
 	menu3()
 ##############
 def edit_post(post_id,msg):
 	global token
 	url="https://graph.facebook.com/"+post_id
-	data= {"access_token":token,"message":msg,"privacy":{"value":"SELF"}}
+	data= {"access_token":token,"message":msg}
 	r=requests.post(url,json=data)
 	menu3()
 #######################
